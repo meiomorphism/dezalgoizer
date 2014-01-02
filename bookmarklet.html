@@ -1,0 +1,17 @@
+﻿<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head>
+<body>
+<h1>Dezalgoizer</h1>
+<p>Drag and drop this link (<a href='javascript:(function(){var d="No text selected to dezalgoize!";var p=window.getSelection();if(!p){alert(d);return}var h=[];for(var b=0;b<p.rangeCount;++b){var m=p.getRangeAt(b);if(!m||m.collapsed){continue}var l=/[\u0300-\u036F]|[\u0483-\u0489]|[\u1DC0-\u1DFF]|[\u20D0-\u20FF]|[\uFE20-\uFE2F]/g;function j(f){return f.replace(l,"")}function n(s,r,f){if(!f){f=s.length}return s.slice(0,r)+j(s.slice(r,f))+s.slice(f)}function t(s,r,f){s.nodeValue=n(s.nodeValue,r,f)}var o=[];var q=m.startContainer;var c=m.endContainer;var g=m.startOffset;var k=m.endOffset;var u=0;if(c.nodeValue){u=c.nodeValue.length-k}function a(s){if(!s){console.log("called with null");return}if(!m.intersectsNode(s)){return}if(s.nodeValue){var r=[s,0,0];if(s==q){r[1]=g}if(s==c){r[2]=k}o.push(r)}else{for(var f=s.firstChild;f;f=f.nextSibling){a(f)}}}a(m.commonAncestorContainer);o.forEach(function(f){t.apply(this,f)});var e=k;if(c.nodeValue){e=c.nodeValue.length-u}var i=new Range();i.setStart(q,g);i.setEnd(c,e);h.push(i)}p.removeAllRanges();h.forEach(function(f){p.addRange(f)})})();'>dezalgoize</a>) into your bookmarks.</p><p>To use, simply select some misdecorated text, then click the bookmarklet.</p>
+<h2>Tests</h2>
+
+Sample text to test your new bookmarklet on:
+
+<ul>
+<li>Dw̨a̛rf mob̵s ̕qui͠z <tt>lynx.̕j̧pg</tt>, ̴k̛v͡et̴c̀h͢</li>
+<li>P̝̈ó̰̫̖̘̦̀ͅj͍̠͎̩̜̫͓̈́̋͋͊̈́d̹̩̠źͥ̎̅̂ͬż̥̭̟̱̹͑̌ė̞̺̤͕̞̮̂̋,͚̹̿ͩͯͫ ͍ͫ̔͌k͚̰ͩ̉ͯͮͩiͥ̋̑ͬ͛̏ͭṉ̗̻͙̜̟́͌͌͊͑̋ͬ̐ ̖̭̜ͨ̿͌̉̌̑t̼̭ͨ̿͊ę͇͕̻̭̈ͦ͌̋ ̠͇͕͑͆̾͑̉c͌͒ͬh͈̺̼̪̟̝̱͂͛͆̅͗m̙̻̗̗͌̍ͦͅu͋̾̓̔ͪ̄̑r͎̞̹̥͉̦͌̐n̤̠͉̥̍̏ͫ͒̌ő̝̠̊ͯͨś̭̫̱̭̻͖͊̉͌ͬ̎̀ć̪͇̙̙̳̝̬̄ ̦̈͑̉̊̌̅w̫̥͇̎ͮͫ͒ͪͧ̾ ̣͙̠͙̫̠̐̈́̿̅͂g͍̹̱̗̗̺͖̈́ͪ͋͋͌ł̮̘̫͙͌ͭą̪͔̞͖̖̠̬̈́b̩̜ͩ͗̃̂ͬ̚ ͓̬̣̜̗̾͐͌͑ͦ͐͗f̮̌̾ͩ͐l̗͇͍̯͎̀̈́ͬ͂ͥ̎̾a͉͔̫̩͖͖̾̔ͮs̗̟͒̀̃͑ͫ̓̆z̬͕̖͍̖͉̾̽ẏ̓!̓̾̌</li>
+<li>S͕̼͖̘̥ͅv̭̲͞o͈̙̮̳ ͎̳̼̥̝̭ͅh̡̫̲̰̠̹̫ö̝̦͟l͇̫͙ṱ̝̘̱̳̭͠,̨̻̝͔̲̙͚̺ ̘̖̫͍̗̭y̢̜̙x҉̠n̖̱̣̥a͙̦͙͡ͅ ͈͎͍̥̬͠k̨̻̝͔̮͍ý̲̮r͙͕̳͜ ̲̥þ̥̬͇͢ͅe̱g͘ͅð̬̪̟͢i̗̙̥̼ ̯̱̫̟͎j̝͕ú͙̲̦̻͉̥̗͝ ̫̫̞̙͎͇̀u̯̤m͕̩̭̥͜ͅ ̮̝͚̱̼̪͇d̥͕̣͝ó̰͠p͚͎̣̣͕͠ ͔͇̰͖ͅí͈͖͞ ͍̥̺̕ͅf̰͙͝é̘̭ ̡̠̱̱̝̝ͅá͓ ̗b҉æ̼̰͇.͉̻͕̣̲</li>
+<li>T̩̩͖̞̗̼͋̔͋̓̍̚ö̟̮̭̲̝̯͕̀͆̽̈́̚͠r̤̲ͫ̀́͒̊̔k̜̠͈͈̍ͩ͟y͙͚͋̔͞l̠̘̠̼̰̃͐͑̆ͩ͒̂̿͟e̓ͯ̄̓͊̈̊̇҉̤͔̟̬̦̠͢͠m̰͉̈́̾̆͂̔̓̍̕͜p̸̷͉̦͙͔͈͔̤͒̎̽́͞ͅi̧̘̻͍̫̞̯̟͙̇̈́͒͊́̀͗̒̕͟j̨̗̘̫͑̾̅̔̃ͤ̽͘͝ä̴̛̙̭̂̒̇̊̄̂̂̚v̖͓̯̠͔̹͌̌͟o͐ͨ҉̖̝̩̠͎͔͈̺́n̺͙̺͚̫̗͊̈́ͩ̈́̽̉ͭ̌̚ͅg̨͖̯̺̲͙̯ͫ̓̑̑̓̕͟ã̦͍͎̖̞̓̌̿̅̓h̴͉͓͇ͯ͆̌ͅd̴͈̠̹̫͎̥͇̞̎̌ͦ͛ų̸̥̘̮̤̱̼̊͑̐̐͛ͥ͝ͅͅs̠̟͉̤̍ͨ͒͟͠</li>
+</ul>
+
+</body></html>
