@@ -19,3 +19,12 @@ Tests
 
 * T̩̩͖̞̗̼͋̔͋̓̍̚ö̟̮̭̲̝̯͕̀͆̽̈́̚͠r̤̲ͫ̀́͒̊̔k̜̠͈͈̍ͩ͟y͙͚͋̔͞l̠̘̠̼̰̃͐͑̆ͩ͒̂̿͟e̓ͯ̄̓͊̈̊̇҉̤͔̟̬̦̠͢͠m̰͉̈́̾̆͂̔̓̍̕͜p̸̷͉̦͙͔͈͔̤͒̎̽́͞ͅi̧̘̻͍̫̞̯̟͙̇̈́͒͊́̀͗̒̕͟j̨̗̘̫͑̾̅̔̃ͤ̽͘͝ä̴̛̙̭̂̒̇̊̄̂̂̚v̖͓̯̠͔̹͌̌͟o͐ͨ҉̖̝̩̠͎͔͈̺́n̺͙̺͚̫̗͊̈́ͩ̈́̽̉ͭ̌̚ͅg̨͖̯̺̲͙̯ͫ̓̑̑̓̕͟ã̦͍͎̖̞̓̌̿̅̓h̴͉͓͇ͯ͆̌ͅd̴͈̠̹̫͎̥͇̞̎̌ͦ͛ų̸̥̘̮̤̱̼̊͑̐̐͛ͥ͝ͅͅs̠̟͉̤̍ͨ͒͟͠
 
+Note that, as of 2014-03-25, attempting to execute a bookmarklet on this page
+will fail on Firefox 27.0.1 due to github's Content Security Policy. This is
+a known Firefox bug, specifically [Mozilla bug #866522](https://bugzilla.mozilla.org/show_bug.cgi?id=866522).
+
+The bookmarklet can still be tested on this page on Firefox by entering the
+Javascript directly into the Web Console (Ctrl+Shift+K, or Cmd+Shift+K for Mac
+users). Fortunately, zalgotext and CSPs don't go together very often, so this
+shouldn't be an issue in practice.
+
