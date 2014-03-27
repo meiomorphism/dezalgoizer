@@ -3,8 +3,11 @@
 
 Strips combining characters from selected text.
 
-View dezalgoizer-bookmarklet.html for a convenient bookmarklet. Alternatively,
-read the source code in dezalgoizer.js.
+To use, simply copy the text in bookmarklet-raw.txt directly into a bookmark.
+(You may find it easier to select if you click the "Raw" link.)
+
+Alternatively, if you've pulled this repository, you can view bookmarklet.html
+for a preconstructed, draggable link.
 
 Use, modify, and distribute freely.
 
