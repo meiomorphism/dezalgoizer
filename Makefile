@@ -8,12 +8,12 @@ HTML_SRC = src/bookmarklet.html.t
 JS_SRC = src/dezalgoizer.js
 JS_SRC_MINI = src/dezalgoizer-mini.js
 
-$(JS_SRC_MINI): $(JS_SRC)
-	yui-compressor $< > $@
-	
+$(JS_SRC_MINI): $(JS_SRC) ./Makefile
+	@# (this should use a cache in `~/.npm/` after the first download)
+	npx -q terser -mc < $< > $@
+
 bookmarklet-raw.txt: $(JS_SRC_MINI)
 	cat <(echo -n 'javascript:') $< > $@
-	
+
 bookmarklet.html: $(HTML_SRC) bookmarklet-raw.txt
 	src/inject-js.pl $(HTML_SRC) bookmarklet-raw.txt > $@
-	
