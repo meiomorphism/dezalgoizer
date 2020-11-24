@@ -9,8 +9,8 @@ JS_SRC = src/dezalgoizer.js
 JS_SRC_MINI = src/dezalgoizer-mini.js
 
 $(JS_SRC_MINI): $(JS_SRC) ./Makefile
-	@# (this should use a cache in `~/.npm/` after the first download)
-	npx -q terser -mc < $< > $@
+	@# (npx should use a cache in `~/.npm/` after the first download)
+	cat $< | sed 's/\bconst\b/let/g' | npx -q terser -mc > $@
 
 bookmarklet-raw.txt: $(JS_SRC_MINI)
 	cat <(echo -n 'javascript:') $< > $@
