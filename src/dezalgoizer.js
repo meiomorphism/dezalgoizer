@@ -49,16 +49,14 @@
 
     // Strip all combining characters from a particular substring [a,b)
     // of a string.
-    function dezalgoizeSpan(str, a, b) {
-      return (
+    const dezalgoizeSpan = (str, a, b) => (
         str.slice(0, a)
         + str.slice(a, b).replace(combiningCharacters, "")
         + str.slice(b)
-      );
-    }
+    );
     // Strip all combining characters from a particular substring [a,b)
     // of a text-node's contents.
-    function dezalgoizeNodeSpan(node, a, b) {
+    const dezalgoizeNodeSpan = (node, a, b) => {
       node.nodeValue = dezalgoizeSpan(node.nodeValue, a, b);
     }
 
