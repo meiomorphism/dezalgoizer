@@ -1,6 +1,5 @@
 (() => {
   const selections = window.getSelection();
-  if (!selections) { alert("No text selected to dezalgoize!"); return; }
 
   // Convenience iterator over the selection range object.
   //
@@ -106,6 +105,15 @@
     newRange.setStart(nodeS, offsetS);
     newRange.setEnd(nodeE, newOffsetE);
     newRanges.push(newRange);
+  }
+
+  // This happens when all the ranges in the selection are "collapsed" (i.e., of
+  // length 0). That may be because there are no ranges, but not necessarily --
+  // Firefox and Chrome both use a collapsed selection object to indicate a
+  // place where the user has clicked on text.
+  if (!newRanges.length) {
+    alert("No text selected to dezalgoize!");
+    return;
   }
 
   // Reselect the previously-selected text.
