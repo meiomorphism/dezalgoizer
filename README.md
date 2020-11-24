@@ -25,12 +25,13 @@ Tests
 
 * T̩̩͖̞̗̼͋̔͋̓̍̚ö̟̮̭̲̝̯͕̀͆̽̈́̚͠r̤̲ͫ̀́͒̊̔k̜̠͈͈̍ͩ͟y͙͚͋̔͞l̠̘̠̼̰̃͐͑̆ͩ͒̂̿͟e̓ͯ̄̓͊̈̊̇҉̤͔̟̬̦̠͢͠m̰͉̈́̾̆͂̔̓̍̕͜p̸̷͉̦͙͔͈͔̤͒̎̽́͞ͅi̧̘̻͍̫̞̯̟͙̇̈́͒͊́̀͗̒̕͟j̨̗̘̫͑̾̅̔̃ͤ̽͘͝ä̴̛̙̭̂̒̇̊̄̂̂̚v̖͓̯̠͔̹͌̌͟o͐ͨ҉̖̝̩̠͎͔͈̺́n̺͙̺͚̫̗͊̈́ͩ̈́̽̉ͭ̌̚ͅg̨͖̯̺̲͙̯ͫ̓̑̑̓̕͟ã̦͍͎̖̞̓̌̿̅̓h̴͉͓͇ͯ͆̌ͅd̴͈̠̹̫͎̥͇̞̎̌ͦ͛ų̸̥̘̮̤̱̼̊͑̐̐͛ͥ͝ͅͅs̠̟͉̤̍ͨ͒͟͠
 
-Note that, as of 2018-06-24, attempting to execute a bookmarklet on this page
-will fail on Firefox 60.0.1 due to GitHub's Content Security Policy. This is
-a known Firefox bug, specifically [Mozilla bug #866522](https://bugzilla.mozilla.org/show_bug.cgi?id=866522).
+Historical note
+---------------
 
-The bookmarklet can still be tested on this page on Firefox by entering the
-Javascript directly into the Web Console (Ctrl+Shift+K, or Cmd+Shift+K for Mac
-users). Fortunately, zalgotext and CSPs don't seem go together very often, so
-this shouldn't be an issue in practice.
-
+Previous versions of this document noted that then-current versions of Firefox
+were unable to execute a bookmarklet on this page, due to
+[Mozilla bug #866522](https://bugzilla.mozilla.org/show_bug.cgi?id=866522).
+While the full version of that bug remains open, it has been mitigated in
+[Mozilla bug #1478037](https://bugzilla.mozilla.org/show_bug.cgi?id=1478037),
+resolved 2019-05-31; Firefox 69 and later should execute this bookmarklet
+regardless of the website's CSP.
